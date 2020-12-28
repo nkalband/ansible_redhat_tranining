@@ -1,0 +1,5 @@
+- name: check connectivity for all
+  hosts: webservers
+  tasks:
+  - name: Check connectivity
+    ping:

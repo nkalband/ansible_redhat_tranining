@@ -1,0 +1,18 @@
+frontend1.fb44.internal
+appdb1.fb44.internal
+app1.fb44.internal
+support1.fb44.internal
+app2.fb44.internal
+[lb]
+frontend1.fb44.internal
+
+[webservers]
+app1.fb44.internal
+app2.fb44.internal
+
+[db]
+appdb1.fb44.internal
+
+[webservers:vars]
+ansible_user = devops
+ansible_ssh_private_key_file = /home/devops/.ssh/id_rsa
